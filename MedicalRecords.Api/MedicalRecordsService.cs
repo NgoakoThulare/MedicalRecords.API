@@ -39,7 +39,7 @@ namespace MedicalRecords.Api
                 data.ContentId = "MedicalRecord";
                 data.ContentDisposition.Inline = true;
                 message.Attachments.Add(data);
-
+                //df
                 await smtpClient.SendMailAsync(message);
 
                 smtpClient.Dispose();
